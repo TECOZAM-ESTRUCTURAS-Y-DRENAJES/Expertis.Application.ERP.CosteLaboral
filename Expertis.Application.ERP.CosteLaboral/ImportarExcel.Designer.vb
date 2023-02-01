@@ -25,6 +25,8 @@ Partial Class ImportarExcel
         Dim Grid1_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImportarExcel))
         Me.Panel1 = New Solmicro.Expertis.Engine.UI.Panel
+        Me.bCrearArticulos = New Solmicro.Expertis.Engine.UI.Button
+        Me.bActualizarPrecioCompra = New Solmicro.Expertis.Engine.UI.Button
         Me.bactfami = New Solmicro.Expertis.Engine.UI.Button
         Me.bcheck = New Solmicro.Expertis.Engine.UI.Button
         Me.aPrecios = New Solmicro.Expertis.Engine.UI.Button
@@ -65,6 +67,8 @@ Partial Class ImportarExcel
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.bCrearArticulos)
+        Me.Panel1.Controls.Add(Me.bActualizarPrecioCompra)
         Me.Panel1.Controls.Add(Me.bactfami)
         Me.Panel1.Controls.Add(Me.bcheck)
         Me.Panel1.Controls.Add(Me.aPrecios)
@@ -78,32 +82,50 @@ Partial Class ImportarExcel
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(947, 106)
+        Me.Panel1.Size = New System.Drawing.Size(947, 148)
         Me.Panel1.TabIndex = 0
+        '
+        'bCrearArticulos
+        '
+        Me.bCrearArticulos.Location = New System.Drawing.Point(22, 82)
+        Me.bCrearArticulos.Name = "bCrearArticulos"
+        Me.bCrearArticulos.Size = New System.Drawing.Size(145, 51)
+        Me.bCrearArticulos.TabIndex = 9
+        Me.bCrearArticulos.Text = "1. Creacion de Articulos"
+        '
+        'bActualizarPrecioCompra
+        '
+        Me.bActualizarPrecioCompra.Location = New System.Drawing.Point(345, 82)
+        Me.bActualizarPrecioCompra.Name = "bActualizarPrecioCompra"
+        Me.bActualizarPrecioCompra.Size = New System.Drawing.Size(124, 48)
+        Me.bActualizarPrecioCompra.TabIndex = 6
+        Me.bActualizarPrecioCompra.Text = "3. Actualizar Precio Compra"
         '
         'bactfami
         '
-        Me.bactfami.Location = New System.Drawing.Point(723, 56)
+        Me.bactfami.Location = New System.Drawing.Point(822, 72)
         Me.bactfami.Name = "bactfami"
         Me.bactfami.Size = New System.Drawing.Size(114, 23)
         Me.bactfami.TabIndex = 8
         Me.bactfami.Text = "Actualizar familia"
+        Me.bactfami.Visible = False
         '
         'bcheck
         '
-        Me.bcheck.Location = New System.Drawing.Point(723, 12)
+        Me.bcheck.Location = New System.Drawing.Point(822, 37)
         Me.bcheck.Name = "bcheck"
         Me.bcheck.Size = New System.Drawing.Size(114, 23)
         Me.bcheck.TabIndex = 7
         Me.bcheck.Text = "Check EXISTE"
+        Me.bcheck.Visible = False
         '
         'aPrecios
         '
-        Me.aPrecios.Location = New System.Drawing.Point(564, 56)
+        Me.aPrecios.Location = New System.Drawing.Point(189, 82)
         Me.aPrecios.Name = "aPrecios"
-        Me.aPrecios.Size = New System.Drawing.Size(136, 29)
+        Me.aPrecios.Size = New System.Drawing.Size(136, 51)
         Me.aPrecios.TabIndex = 6
-        Me.aPrecios.Text = "Actualizar Precios Javier"
+        Me.aPrecios.Text = "2. Actualizar Precios(Compra y Reposicion)"
         '
         'Label3
         '
@@ -147,11 +169,12 @@ Partial Class ImportarExcel
         '
         'btnImportar
         '
-        Me.btnImportar.Location = New System.Drawing.Point(583, 12)
+        Me.btnImportar.Location = New System.Drawing.Point(822, 110)
         Me.btnImportar.Name = "btnImportar"
         Me.btnImportar.Size = New System.Drawing.Size(117, 23)
         Me.btnImportar.TabIndex = 2
-        Me.btnImportar.Text = "Importar Excel"
+        Me.btnImportar.Text = "NO HACE NADA"
+        Me.btnImportar.Visible = False
         '
         'Label1
         '
@@ -173,9 +196,9 @@ Partial Class ImportarExcel
         '
         Me.Panel3.Controls.Add(Me.Grid1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 106)
+        Me.Panel3.Location = New System.Drawing.Point(0, 148)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(947, 381)
+        Me.Panel3.Size = New System.Drawing.Size(947, 339)
         Me.Panel3.TabIndex = 2
         '
         'Grid1
@@ -191,7 +214,7 @@ Partial Class ImportarExcel
         Me.Grid1.Name = "Grid1"
         Me.Grid1.PrimaryDataFields = "IDCosteEmpresa"
         Me.Grid1.SecondaryDataFields = Nothing
-        Me.Grid1.Size = New System.Drawing.Size(947, 381)
+        Me.Grid1.Size = New System.Drawing.Size(947, 339)
         Me.Grid1.TabIndex = 0
         Me.Grid1.ViewName = Nothing
         '
@@ -225,5 +248,7 @@ Partial Class ImportarExcel
     Friend WithEvents aPrecios As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bcheck As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bactfami As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bActualizarPrecioCompra As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bCrearArticulos As Solmicro.Expertis.Engine.UI.Button
 
 End Class
