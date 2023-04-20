@@ -25,6 +25,7 @@ Partial Class ImportarExcel
         Dim Grid1_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImportarExcel))
         Me.Panel1 = New Solmicro.Expertis.Engine.UI.Panel
+        Me.bActualizarStock = New Solmicro.Expertis.Engine.UI.Button
         Me.bCrearArticulos = New Solmicro.Expertis.Engine.UI.Button
         Me.bActualizarPrecioCompra = New Solmicro.Expertis.Engine.UI.Button
         Me.bactfami = New Solmicro.Expertis.Engine.UI.Button
@@ -67,6 +68,7 @@ Partial Class ImportarExcel
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.bActualizarStock)
         Me.Panel1.Controls.Add(Me.bCrearArticulos)
         Me.Panel1.Controls.Add(Me.bActualizarPrecioCompra)
         Me.Panel1.Controls.Add(Me.bactfami)
@@ -84,6 +86,14 @@ Partial Class ImportarExcel
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(947, 148)
         Me.Panel1.TabIndex = 0
+        '
+        'bActualizarStock
+        '
+        Me.bActualizarStock.Location = New System.Drawing.Point(486, 82)
+        Me.bActualizarStock.Name = "bActualizarStock"
+        Me.bActualizarStock.Size = New System.Drawing.Size(123, 48)
+        Me.bActualizarStock.TabIndex = 10
+        Me.bActualizarStock.Text = "4. Actualizar Stock Minimo y Maximo"
         '
         'bCrearArticulos
         '
@@ -250,5 +260,6 @@ Partial Class ImportarExcel
     Friend WithEvents bactfami As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bActualizarPrecioCompra As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bCrearArticulos As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bActualizarStock As Solmicro.Expertis.Engine.UI.Button
 
 End Class
