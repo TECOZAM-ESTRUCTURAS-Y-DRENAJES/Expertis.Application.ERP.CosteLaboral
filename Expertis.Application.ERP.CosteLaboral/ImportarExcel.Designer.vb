@@ -40,6 +40,7 @@ Partial Class ImportarExcel
         Me.TextBox1 = New Solmicro.Expertis.Engine.UI.TextBox
         Me.Panel3 = New Solmicro.Expertis.Engine.UI.Panel
         Me.Grid1 = New Solmicro.Expertis.Engine.UI.Grid
+        Me.bAlias = New Solmicro.Expertis.Engine.UI.Button
         CType(Me.ToolBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,6 +69,7 @@ Partial Class ImportarExcel
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.bAlias)
         Me.Panel1.Controls.Add(Me.bActualizarStock)
         Me.Panel1.Controls.Add(Me.bCrearArticulos)
         Me.Panel1.Controls.Add(Me.bActualizarPrecioCompra)
@@ -228,6 +230,14 @@ Partial Class ImportarExcel
         Me.Grid1.TabIndex = 0
         Me.Grid1.ViewName = Nothing
         '
+        'bAlias
+        '
+        Me.bAlias.Location = New System.Drawing.Point(624, 82)
+        Me.bAlias.Name = "bAlias"
+        Me.bAlias.Size = New System.Drawing.Size(123, 48)
+        Me.bAlias.TabIndex = 11
+        Me.bAlias.Text = "5. Actualizar Alias"
+        '
         'ImportarExcel
         '
         Me.ClientSize = New System.Drawing.Size(955, 560)
@@ -261,5 +271,6 @@ Partial Class ImportarExcel
     Friend WithEvents bActualizarPrecioCompra As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bCrearArticulos As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bActualizarStock As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bAlias As Solmicro.Expertis.Engine.UI.Button
 
 End Class

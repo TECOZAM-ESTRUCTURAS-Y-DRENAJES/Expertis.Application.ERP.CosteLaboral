@@ -606,4 +606,47 @@ Public Class ImportarExcel
             MsgBox("Stocks actualizados")
         End With
     End Sub
+
+    Private Sub bAlias_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bAlias.Click
+
+        Dim ruta As String
+        Dim hoja As String = "Hoja1"
+        Dim rango As String = "A1:B1000"
+        Dim openFD As New OpenFileDialog()
+        With openFD
+            .Title = "Seleccionar archivos"
+            .Filter = "Archivos Excel(*.xls;*.xlsx)|*.xls;*xlsx|Todos los archivos(*.*)|*.*"
+            .Multiselect = False
+            .InitialDirectory = My.Computer.FileSystem.SpecialDirectories.Desktop
+            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+
+                TextBox1.Text = openFD.FileName
+                Dim dtCoste As New DataTable
+                Dim control = 0
+                Try
+                    ruta = openFD.FileName
+                    Dim dt As DataTable = ObtenerDatosExcel(ruta, hoja, rango)
+                    Dim aux As New Solmicro.Expertis.Business.ClasesTecozam.MetodosAuxiliares
+
+                    Dim IDArticulo As String
+
+                    Dim sql As String
+                    For Each dr As DataRow In dt.Rows
+                        IDArticulo = dr(0)
+                        If IDArticulo.ToString.Length = 0 Then
+                            Exit For
+                        End If
+                        sql = "UPDATE tbMaestroArticulo "
+                        sql &= "SET Alias ='" & dr("ALIAS").ToString & "'"
+                        sql &= " WHERE IDArticulo = '" & dr("IDARTICULO").ToString & "'"
+
+                        aux.EjecutarSql(sql)
+                    Next
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            End If
+            MsgBox("Stocks actualizados")
+        End With
+    End Sub
 End Class
