@@ -25,6 +25,7 @@ Partial Class ImportarExcel
         Dim Grid1_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImportarExcel))
         Me.Panel1 = New Solmicro.Expertis.Engine.UI.Panel
+        Me.bAlias = New Solmicro.Expertis.Engine.UI.Button
         Me.bActualizarStock = New Solmicro.Expertis.Engine.UI.Button
         Me.bCrearArticulos = New Solmicro.Expertis.Engine.UI.Button
         Me.bActualizarPrecioCompra = New Solmicro.Expertis.Engine.UI.Button
@@ -40,7 +41,6 @@ Partial Class ImportarExcel
         Me.TextBox1 = New Solmicro.Expertis.Engine.UI.TextBox
         Me.Panel3 = New Solmicro.Expertis.Engine.UI.Panel
         Me.Grid1 = New Solmicro.Expertis.Engine.UI.Grid
-        Me.bAlias = New Solmicro.Expertis.Engine.UI.Button
         CType(Me.ToolBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +88,14 @@ Partial Class ImportarExcel
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(947, 148)
         Me.Panel1.TabIndex = 0
+        '
+        'bAlias
+        '
+        Me.bAlias.Location = New System.Drawing.Point(624, 82)
+        Me.bAlias.Name = "bAlias"
+        Me.bAlias.Size = New System.Drawing.Size(123, 48)
+        Me.bAlias.TabIndex = 11
+        Me.bAlias.Text = "5. Actualizar Alias"
         '
         'bActualizarStock
         '
@@ -229,14 +237,6 @@ Partial Class ImportarExcel
         Me.Grid1.Size = New System.Drawing.Size(947, 339)
         Me.Grid1.TabIndex = 0
         Me.Grid1.ViewName = Nothing
-        '
-        'bAlias
-        '
-        Me.bAlias.Location = New System.Drawing.Point(624, 82)
-        Me.bAlias.Name = "bAlias"
-        Me.bAlias.Size = New System.Drawing.Size(123, 48)
-        Me.bAlias.TabIndex = 11
-        Me.bAlias.Text = "5. Actualizar Alias"
         '
         'ImportarExcel
         '

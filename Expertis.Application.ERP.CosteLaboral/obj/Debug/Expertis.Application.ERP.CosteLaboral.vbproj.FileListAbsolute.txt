@@ -161,3 +161,46 @@ C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Ex
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CommonClasses.pdb
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Mnto.pdb
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.EMCS.XmlSerializers.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CosteLaboral.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CosteLaboral.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CosteLaboral.xml
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Negocio.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\office.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\log4net.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.SepaSrv.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.SEPA.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Ficheros.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Bodega.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.CRM.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.SEPA.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CommonClasses.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Mnto.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.EMCS.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Rules.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Financiero.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Obra.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Negocio.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.SEPA.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.SEPA.xml
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.SEPA.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Application.ERP.CommonClasses.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Mnto.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.Obra.pdb
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\bin\Debug\Expertis.Business.EMCS.XmlSerializers.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.CIMntoConsultaCosteEmpresa.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.ImportarArticulado.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.CosteLabDiaTrabajador.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.CosteLabOperarioMes.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.FrmDatos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.GridMntoResumenCosteObra.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.ImportarExcel.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.ImportarSubFamilias.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.Resources.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.vbproj.GenerateResource.Cache
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.dll.licenses
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.xml
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.CosteLaboral\Expertis.Application.ERP.CosteLaboral\obj\Debug\Expertis.Application.ERP.CosteLaboral.pdb
