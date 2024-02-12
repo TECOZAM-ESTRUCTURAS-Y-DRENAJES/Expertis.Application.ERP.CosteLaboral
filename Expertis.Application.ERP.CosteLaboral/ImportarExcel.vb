@@ -649,4 +649,143 @@ Public Class ImportarExcel
             MsgBox("Stocks actualizados")
         End With
     End Sub
+    
+
+    Private Sub bJerarquiaArticulos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bJerarquiaArticulos.Click
+        Dim ruta As String
+        Dim hoja As String = 1
+        Dim rango As String = ""
+
+        Dim openFD As New OpenFileDialog()
+        With openFD
+            .Title = "Seleccionar archivos"
+            .Filter = "Archivos Excel(*.xls;*.xlsx)|*.xls;*xlsx|Todos los archivos(*.*)|*.*"
+            .Multiselect = False
+            .InitialDirectory = My.Computer.FileSystem.SpecialDirectories.Desktop
+            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+
+                TextBox1.Text = openFD.FileName
+                Dim dtCoste As New DataTable
+                Dim control = 0
+                Try
+                    ruta = openFD.FileName
+
+                    dtCoste.Columns.Add("IDCodificacion")
+                    dtCoste.Columns.Add("Tipo")
+                    dtCoste.Columns.Add("DescTipo")
+                    dtCoste.Columns.Add("Sistema")
+                    dtCoste.Columns.Add("DescSistema")
+                    dtCoste.Columns.Add("Familia")
+                    dtCoste.Columns.Add("DescFamilia")
+                    dtCoste.Columns.Add("Subfamilia")
+                    dtCoste.Columns.Add("DescSubfamilia")
+                    dtCoste.Columns.Add("Item")
+                    dtCoste.Columns.Add("DescItem")
+
+
+
+                    hoja = "CARGA"
+                    rango = "A1:K20"
+
+                    Dim dt As DataTable = ObtenerDatosExcel(ruta, hoja, rango)
+                    MessageBox.Show("El excel tiene " & (dt.Rows.Count) & " filas.")
+
+                    Dim drCoste As DataRow
+
+                    For Each dr As DataRow In dt.Rows
+                        If IsDBNull(dr(0)) Then
+                        Else
+                            If IsDBNull(dr(7)) = False Then
+                                drCoste = dtCoste.NewRow
+                                drCoste("IDCodificacion") = dr(0)
+                                drCoste("Tipo") = dr(1)
+                                drCoste("DescTipo") = dr(2)
+                                drCoste("Sistema") = dr(3)
+                                drCoste("DescSistema") = dr(4)
+                                drCoste("Familia") = dr(5)
+                                drCoste("DescFamilia") = dr(6)
+                                drCoste("Subfamilia") = dr(7)
+                                drCoste("DescSubfamilia") = dr(8)
+                                drCoste("Item") = dr(9)
+                                drCoste("DescItem") = dr(10)
+
+                                dtCoste.Rows.Add(drCoste)
+                                control = control + 1
+                            End If
+                        End If
+                    Next
+
+
+                    For Each drInsert As DataRow In dtCoste.Rows
+
+                        Dim clsCE As New CodificacionArticulos
+                        Dim dtCE As DataTable = clsCE.AddNewForm
+                        dtCE.Rows(0)("IDCodificacion") = drInsert("IDCodificacion")
+                        dtCE.Rows(0)("Tipo") = drInsert("Tipo")
+                        dtCE.Rows(0)("DescTipo") = drInsert("DescTipo")
+                        dtCE.Rows(0)("Sistema") = drInsert("Sistema")
+                        dtCE.Rows(0)("DescSistema") = drInsert("DescSistema")
+                        dtCE.Rows(0)("Familia") = drInsert("Familia")
+                        dtCE.Rows(0)("DescFamilia") = drInsert("DescFamilia")
+                        dtCE.Rows(0)("Subfamilia") = drInsert("Subfamilia")
+                        dtCE.Rows(0)("DescSubfamilia") = drInsert("DescSubfamilia")
+                        dtCE.Rows(0)("Item") = drInsert("Item")
+                        dtCE.Rows(0)("DescItem") = drInsert("DescItem")
+                        Try
+                            clsCE.Update(dtCE)
+                        Catch ex As Exception
+
+                        End Try
+
+                    Next
+                Catch ex As Exception
+                    MessageBox.Show("No hay más datos que añadir. ")
+                    Me.Close()
+                End Try
+                ExpertisApp.GenerateMessage("Se han insertado las lineas correctamente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+            End If
+        End With
+    End Sub
+
+    Private Sub bAtributos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bAtributos.Click
+        Dim ruta As String
+        Dim hoja As String = "1"
+        Dim rango As String = "A1:F100"
+        Dim openFD As New OpenFileDialog()
+        With openFD
+            .Title = "Seleccionar archivos"
+            .Filter = "Archivos Excel(*.xls;*.xlsx)|*.xls;*xlsx|Todos los archivos(*.*)|*.*"
+            .Multiselect = False
+            .InitialDirectory = My.Computer.FileSystem.SpecialDirectories.Desktop
+            If .ShowDialog = Windows.Forms.DialogResult.OK Then
+
+                TextBox1.Text = openFD.FileName
+                Dim dtCoste As New DataTable
+                Dim control = 0
+                Try
+                    ruta = openFD.FileName
+                    Dim dt As DataTable = ObtenerDatosExcel(ruta, hoja, rango)
+                    Dim aux As New Solmicro.Expertis.Business.ClasesTecozam.MetodosAuxiliares
+
+                    Dim IDArticulo As String
+
+                    Dim sql As String
+                    For Each dr As DataRow In dt.Rows
+                        IDArticulo = dr(0)
+                        If IDArticulo.ToString.Length = 0 Then
+                            Exit For
+                        End If
+                        sql = "UPDATE tbMaestroArticulo "
+                        sql &= "SET PesoNeto ='" & dr("Peso(kg)").ToString.Replace(",", ".") & "', Ancho='" & dr("Ancho(m)").ToString.Replace(",", ".") & "',Alto='" & dr("Alto(m)").ToString.Replace(",", ".") & "',Largo='" & dr("Largo(m)").ToString.Replace(",", ".") & "',IDCodificacion='" & dr("IDCodificacion").ToString.Replace(",", ".") & "'"
+                        sql &= " WHERE IDArticulo = '" & dr("IDARTICULO").ToString & "'"
+
+                        aux.EjecutarSql(sql)
+                    Next
+                Catch ex As Exception
+                    MsgBox(ex.ToString)
+                End Try
+            End If
+            MsgBox("Articulos actualizados")
+        End With
+    End Sub
 End Class

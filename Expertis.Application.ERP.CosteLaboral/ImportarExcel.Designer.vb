@@ -41,6 +41,8 @@ Partial Class ImportarExcel
         Me.TextBox1 = New Solmicro.Expertis.Engine.UI.TextBox
         Me.Panel3 = New Solmicro.Expertis.Engine.UI.Panel
         Me.Grid1 = New Solmicro.Expertis.Engine.UI.Grid
+        Me.bJerarquiaArticulos = New Solmicro.Expertis.Engine.UI.Button
+        Me.bAtributos = New Solmicro.Expertis.Engine.UI.Button
         CType(Me.ToolBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +71,8 @@ Partial Class ImportarExcel
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.bAtributos)
+        Me.Panel1.Controls.Add(Me.bJerarquiaArticulos)
         Me.Panel1.Controls.Add(Me.bAlias)
         Me.Panel1.Controls.Add(Me.bActualizarStock)
         Me.Panel1.Controls.Add(Me.bCrearArticulos)
@@ -238,6 +242,22 @@ Partial Class ImportarExcel
         Me.Grid1.TabIndex = 0
         Me.Grid1.ViewName = Nothing
         '
+        'bJerarquiaArticulos
+        '
+        Me.bJerarquiaArticulos.Location = New System.Drawing.Point(539, 16)
+        Me.bJerarquiaArticulos.Name = "bJerarquiaArticulos"
+        Me.bJerarquiaArticulos.Size = New System.Drawing.Size(123, 48)
+        Me.bJerarquiaArticulos.TabIndex = 12
+        Me.bJerarquiaArticulos.Text = "6. Carga codificacion"
+        '
+        'bAtributos
+        '
+        Me.bAtributos.Location = New System.Drawing.Point(668, 16)
+        Me.bAtributos.Name = "bAtributos"
+        Me.bAtributos.Size = New System.Drawing.Size(123, 48)
+        Me.bAtributos.TabIndex = 13
+        Me.bAtributos.Text = "7. Actualizar peso, ancho, alto"
+        '
         'ImportarExcel
         '
         Me.ClientSize = New System.Drawing.Size(955, 560)
@@ -272,5 +292,7 @@ Partial Class ImportarExcel
     Friend WithEvents bCrearArticulos As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bActualizarStock As Solmicro.Expertis.Engine.UI.Button
     Friend WithEvents bAlias As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bJerarquiaArticulos As Solmicro.Expertis.Engine.UI.Button
+    Friend WithEvents bAtributos As Solmicro.Expertis.Engine.UI.Button
 
 End Class
