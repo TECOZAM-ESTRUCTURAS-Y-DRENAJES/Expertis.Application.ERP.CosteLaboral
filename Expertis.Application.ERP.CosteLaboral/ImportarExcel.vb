@@ -420,71 +420,66 @@ Public Class ImportarExcel
                     Grid1.RetrieveStructure()
 
                     For Each dr As DataRow In dt.Rows
-                        If IsDBNull(dr(0)) Then
-                        Else
-                            If IsDBNull(dr(7)) = False Then
-                                Grid1.RetrieveStructure()
-                                drCoste = dtCoste.NewRow
-                                drCoste("IDTipo") = dr(0)
-                                drCoste("IDFamilia") = dr(1)
-                                drCoste("IDSubFamilia") = dr(2)
-                                drCoste("IDArticulo") = dr(3)
-                                drCoste("DescArticulo") = dr(4)
-                                drCoste("IDEstado") = "A"
-                                drCoste("IDUdInterna") = dr(5)
-                                drCoste("IDUdCompra") = dr(5)
-                                drCoste("IDUdVenta") = dr(5)
-                                drCoste("PrecioEstandarA") = dr(7)
-                                drCoste("PrecioEstandarB") = dr(7)
-                                drCoste("UdValoracion") = 1
-                                drCoste("PesoNeto") = 0
-                                drCoste("PesoBruto") = 0
-                                drCoste("TipoEstructura") = False
-                                drCoste("TipoRuta") = False
-                                drCoste("PuntoVerde") = 0
-                                drCoste("PVPMinimo") = 0
-                                drCoste("PorcentajeRechazo") = 0
-                                drCoste("Plazo") = 0
-                                drCoste("Volumen") = 0
-                                drCoste("RecalcularValoracion") = 1
-                                drCoste("CriterioValoracion") = 3
-                                drCoste("GestionStockPorLotes") = False
-                                drCoste("PrecioUltimaCompraA") = 0
-                                drCoste("PrecioUltimaCompraB") = 0
-                                drCoste("LoteMultiplo") = 0
-                                drCoste("CantMinSolicitud") = 0
-                                drCoste("CantMaxSolicitud") = 0
-                                drCoste("LimitarPetDia") = False
-                                drCoste("PrecioBase") = 0
-                                drCoste("Configurable") = False
-                                drCoste("StockNegativo") = False
-                                drCoste("PlazoFabricacion") = 0
-                                drCoste("CapacidadDiaria") = 0
-                                drCoste("AplicarLoteMRP") = False
-                                drCoste("NSerieObligatorio") = False
-                                drCoste("PuntosMarketing") = 0
-                                drCoste("ValorReposicionA") = dr(6)
-                                drCoste("ValorReposicionB") = dr(6)
-                                drCoste("ControlRecepcion") = 0
-                                drCoste("GenerarOFArticuloFinal") = False
-                                drCoste("TipoFactAlquiler") = 0
-                                drCoste("Seguridad") = False
-                                drCoste("Reglamentacion") = False
-                                drCoste("SeguridadReglamentacion") = False
-                                drCoste("DiasMinimosFactAlquiler") = 0
-                                drCoste("SinDtoEnAlquiler") = False
-                                drCoste("SinSeguroEnAlquiler") = False
-                                drCoste("NecesitaOperario") = False
-                                drCoste("FacturacionAsociadaMaq") = False
-                                drCoste("FactTasaResiduos") = False
-                                drCoste("NoImprimirEnFactura") = False
-                                drCoste("RetencionIRPF") = True
-                                drCoste("IncluirEnEMCS") = False
+                        Grid1.RetrieveStructure()
+                        drCoste = dtCoste.NewRow
+                        drCoste("IDTipo") = dr(0)
+                        drCoste("IDFamilia") = dr(1)
+                        drCoste("IDSubFamilia") = dr(2)
+                        drCoste("IDArticulo") = dr(3)
+                        drCoste("DescArticulo") = dr(4)
+                        drCoste("IDEstado") = "A"
+                        drCoste("IDUdInterna") = dr(5)
+                        drCoste("IDUdCompra") = dr(5)
+                        drCoste("IDUdVenta") = dr(5)
+                        drCoste("PrecioEstandarA") = dr(7)
+                        drCoste("PrecioEstandarB") = dr(7)
+                        drCoste("UdValoracion") = 1
+                        drCoste("PesoNeto") = 0
+                        drCoste("PesoBruto") = 0
+                        drCoste("TipoEstructura") = False
+                        drCoste("TipoRuta") = False
+                        drCoste("PuntoVerde") = 0
+                        drCoste("PVPMinimo") = 0
+                        drCoste("PorcentajeRechazo") = 0
+                        drCoste("Plazo") = 0
+                        drCoste("Volumen") = 0
+                        drCoste("RecalcularValoracion") = 1
+                        drCoste("CriterioValoracion") = 3
+                        drCoste("GestionStockPorLotes") = False
+                        drCoste("PrecioUltimaCompraA") = 0
+                        drCoste("PrecioUltimaCompraB") = 0
+                        drCoste("LoteMultiplo") = 0
+                        drCoste("CantMinSolicitud") = 0
+                        drCoste("CantMaxSolicitud") = 0
+                        drCoste("LimitarPetDia") = False
+                        drCoste("PrecioBase") = 0
+                        drCoste("Configurable") = False
+                        drCoste("StockNegativo") = False
+                        drCoste("PlazoFabricacion") = 0
+                        drCoste("CapacidadDiaria") = 0
+                        drCoste("AplicarLoteMRP") = False
+                        drCoste("NSerieObligatorio") = False
+                        drCoste("PuntosMarketing") = 0
+                        drCoste("ValorReposicionA") = dr(6)
+                        drCoste("ValorReposicionB") = dr(6)
+                        drCoste("ControlRecepcion") = 0
+                        drCoste("GenerarOFArticuloFinal") = False
+                        drCoste("TipoFactAlquiler") = 0
+                        drCoste("Seguridad") = False
+                        drCoste("Reglamentacion") = False
+                        drCoste("SeguridadReglamentacion") = False
+                        drCoste("DiasMinimosFactAlquiler") = 0
+                        drCoste("SinDtoEnAlquiler") = False
+                        drCoste("SinSeguroEnAlquiler") = False
+                        drCoste("NecesitaOperario") = False
+                        drCoste("FacturacionAsociadaMaq") = False
+                        drCoste("FactTasaResiduos") = False
+                        drCoste("NoImprimirEnFactura") = False
+                        drCoste("RetencionIRPF") = True
+                        drCoste("IncluirEnEMCS") = False
 
-                                dtCoste.Rows.Add(drCoste)
-                                control = control + 1
-                            End If
-                        End If
+                        dtCoste.Rows.Add(drCoste)
+                        control = control + 1
                     Next
 
                     Grid1.DataSource = dtCoste

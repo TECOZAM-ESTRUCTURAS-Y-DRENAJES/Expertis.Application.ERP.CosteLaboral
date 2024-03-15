@@ -25,6 +25,8 @@ Partial Class ImportarExcel
         Dim Grid1_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ImportarExcel))
         Me.Panel1 = New Solmicro.Expertis.Engine.UI.Panel
+        Me.bAtributos = New Solmicro.Expertis.Engine.UI.Button
+        Me.bJerarquiaArticulos = New Solmicro.Expertis.Engine.UI.Button
         Me.bAlias = New Solmicro.Expertis.Engine.UI.Button
         Me.bActualizarStock = New Solmicro.Expertis.Engine.UI.Button
         Me.bCrearArticulos = New Solmicro.Expertis.Engine.UI.Button
@@ -41,8 +43,6 @@ Partial Class ImportarExcel
         Me.TextBox1 = New Solmicro.Expertis.Engine.UI.TextBox
         Me.Panel3 = New Solmicro.Expertis.Engine.UI.Panel
         Me.Grid1 = New Solmicro.Expertis.Engine.UI.Grid
-        Me.bJerarquiaArticulos = New Solmicro.Expertis.Engine.UI.Button
-        Me.bAtributos = New Solmicro.Expertis.Engine.UI.Button
         CType(Me.ToolBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,6 +92,22 @@ Partial Class ImportarExcel
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(947, 148)
         Me.Panel1.TabIndex = 0
+        '
+        'bAtributos
+        '
+        Me.bAtributos.Location = New System.Drawing.Point(668, 16)
+        Me.bAtributos.Name = "bAtributos"
+        Me.bAtributos.Size = New System.Drawing.Size(123, 48)
+        Me.bAtributos.TabIndex = 13
+        Me.bAtributos.Text = "7. Actualizar peso, ancho, alto"
+        '
+        'bJerarquiaArticulos
+        '
+        Me.bJerarquiaArticulos.Location = New System.Drawing.Point(539, 16)
+        Me.bJerarquiaArticulos.Name = "bJerarquiaArticulos"
+        Me.bJerarquiaArticulos.Size = New System.Drawing.Size(123, 48)
+        Me.bJerarquiaArticulos.TabIndex = 12
+        Me.bJerarquiaArticulos.Text = "6. Carga codificacion"
         '
         'bAlias
         '
@@ -241,22 +257,6 @@ Partial Class ImportarExcel
         Me.Grid1.Size = New System.Drawing.Size(947, 339)
         Me.Grid1.TabIndex = 0
         Me.Grid1.ViewName = Nothing
-        '
-        'bJerarquiaArticulos
-        '
-        Me.bJerarquiaArticulos.Location = New System.Drawing.Point(539, 16)
-        Me.bJerarquiaArticulos.Name = "bJerarquiaArticulos"
-        Me.bJerarquiaArticulos.Size = New System.Drawing.Size(123, 48)
-        Me.bJerarquiaArticulos.TabIndex = 12
-        Me.bJerarquiaArticulos.Text = "6. Carga codificacion"
-        '
-        'bAtributos
-        '
-        Me.bAtributos.Location = New System.Drawing.Point(668, 16)
-        Me.bAtributos.Name = "bAtributos"
-        Me.bAtributos.Size = New System.Drawing.Size(123, 48)
-        Me.bAtributos.TabIndex = 13
-        Me.bAtributos.Text = "7. Actualizar peso, ancho, alto"
         '
         'ImportarExcel
         '
